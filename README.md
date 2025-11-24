@@ -1,37 +1,3 @@
----
-license: other
-license_name: ngen-3-community-license
-license_link: https://tnsaai-builds.framer.website/community/licenses/ngen3
-library_name: transformers
-model-index:
-- name: NGen-3-7B
-  results:
-  - task:
-      type: text-generation
-    dataset:
-      name: TCorpus5
-      type: WebCorpus
-    metrics:
-    - name: MMLU
-      type: accuracy
-      value: 60.24
-    - name: PIQA
-      type: accuracy
-      value: 79.12
-    - name: Hellaswag
-      type: accuracy
-      value: 52.87
-    - name: Winogrande
-      type: accuracy
-      value: 68.35
-pipeline_tag: text-generation
-datasets:
-- HuggingFaceH4/no_robots
-- Open-Orca/SlimOrca
-- Skylion007/openwebtext
-- HuggingFaceFW/fineweb
-- HuggingFaceTB/smoltalk
-
 extra_gated_prompt: |
   1. LICENSE DEFINITIONS & SCOPE
        1.1 Core Definitions
